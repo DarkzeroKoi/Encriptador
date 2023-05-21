@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="screen">  
+        <section class="main-content">
+            <div class="header">
+                <img class="logo" src="Stamp_67.png" alt="logo">
+                <textarea class="traductor" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="buttons"> 
+                <small class="info"> 
+                    <img src="bi_exclamation-circle-fill.png" alt="Exclamation info">
+                    Solo letras minúsculas y sin acentos
+                </small>
+                <div class="flex-box">
+                    <button class="encrypt" onclick="encrypt()">Encriptar</button>
+                    <button class="decrypt" onclick="decrypt()">Desencriptar</button>
+                </div>
+            </div>   
+        </section class="board-copy">
+        <section class="transcriptor shadow" id="trans">
+            <div class="noResult" align-content="center">
+                <img class="image" src="sticker110.png" alt="Image reference transcriptor element" >
+                <h1 class="trans-title">Ningún mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="result">
+                <textarea class="mensaje"></textarea>
+                <button class="copy">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
